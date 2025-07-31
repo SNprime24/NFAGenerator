@@ -183,6 +183,7 @@ void printNFA(machine nfa) {
 void generateMermaidDiagram(machine nfa, string& filename) {
     ofstream fout(filename);
     fout << "flowchart LR" << endl;
+    fout << "Note[\"This diagram shows NFA from regex\"]:::info" << endl;
 
     unordered_set<int> visited;
     queue<node*> q;
@@ -208,6 +209,7 @@ void generateMermaidDiagram(machine nfa, string& filename) {
 
     fout << "    style " << nfa.start->id << " fill:#aaf,stroke:#000,stroke-width:2px" << endl;
     fout << "    style " << nfa.end->id << " fill:#afa,stroke:#000,stroke-width:2px" << endl;
+    fout << "    classDef info fill:none,color:#333,font-size:3px;" << endl;
     fout.close();
 }
 
