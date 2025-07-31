@@ -93,6 +93,10 @@ It compiles REtoNFA.cpp, runs the program to generate nfa_diagram.mmd, and then 
 
 <br>
 
+## Examples
+![](example0.svg)
+![](example1.svg)
+![](example2.svg)
 
 ## 🙋‍♂️ Author
 Suprit Naik (22CS01018)
