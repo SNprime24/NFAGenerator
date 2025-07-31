@@ -35,7 +35,7 @@ The project consists of several key files, each with a specific purpose:
 
 - **`REtoNFA.cpp`**: 
 
-This is the main C++ program that takes a regular expression as input and constructs its equivalent NFA using Thompson's construction. It generates the NFA structure in Mermaid syntax and writes it to a file named `nfa_diagram.mmd`. To compile and run this file on Linux or macOS, use the following commands:
+This is the main C++ program that takes a regular expression as input and constructs its equivalent NFA using Thompson's construction. It generates a transition table and the NFA structure in Mermaid syntax and writes it to a file named `nfa_diagram.mmd`. To compile and run this file on Linux or macOS, use the following commands:
 
 ```bash
   g++ REtoNFA.cpp -o nfa && ./nfa
