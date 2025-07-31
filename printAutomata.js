@@ -1,11 +1,15 @@
-import { run } from "@mermaid-js/mermaid-cli"
+import { run } from "@mermaid-js/mermaid-cli";
 
-const inputFile = process.argv[2]; 
-const outputFile = process.argv[3];
+let inputFile = "nfa_diagram.mmd";
+let outputFile = "nfa_diagram.svg";
 
-if (!inputFile || !outputFile) {
-    console.error("Usage: node printAutomata.js <inputFile> <outputFile>");
-    process.exit(1);
+const args = process.argv.slice(2);
+
+if (args.length == 2) {
+    inputFile = args[0];
+    outputFile = args[1];
+}else if (args.length == 1) {
+    outputFile = args[0];
 }
 
 await run(
