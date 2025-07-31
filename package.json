@@ -1,4 +1,8 @@
 {
+  "name": "nfa-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "printAutomata.js",
   "dependencies": {
     "@mermaid-js/mermaid-cli": "^11.9.0"
   }
