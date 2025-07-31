@@ -207,7 +207,7 @@ void generateMermaidDiagram(machine nfa, string& filename, string& regex) {
         }
     }
 
-    fout << "    style " << nfa.start->id << " fill:#aaf,stroke:#000,stroke-width:2px" << endl;
+    fout << "    style " << nfa.start->id << " fill:#faa,stroke:#000,stroke-width:2px" << endl;
     fout << "    style " << nfa.end->id << " fill:#afa,stroke:#000,stroke-width:2px" << endl;
     fout << "    classDef info fill:none,color:#333,font-size:7px;" << endl;
     fout.close();
